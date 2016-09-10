@@ -1,0 +1,36 @@
+$white: #FFFFFF;
+$lGrey:#F1F1F1;
+$grey:#999999;
+
+body{
+	margin:0;
+	padding:0;
+	font-size: 16px;
+	background: $lGrey;
+}
+.bold{
+	font-weight: bold;
+}
+
+/*footer*/
+#footer{
+	height: 50px;
+	background: $lGrey;
+	ul{
+		margin:0;
+		li{
+			display: inline-block;
+			margin-right: 10px;
+			color:$grey;
+
+			a{
+				margin-left: 5px;
+				color:$grey;
+			}
+		}
+	}
+	h5{
+		font-size: 12px;
+		color:$grey;
+	}
+}

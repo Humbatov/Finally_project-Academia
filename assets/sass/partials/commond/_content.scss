@@ -1,0 +1,178 @@
+$white: #FFFFFF;
+$lGrey:#F1F1F1;
+$grey:#999999;
+
+@mixin border{
+	border:1px solid #CCCCCC;
+	border-radius: 5px;
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-size: 16px;
+	background: $lGrey;
+}
+.bold{
+	font-weight: bold;
+}
+.fixed{
+	position: fixed;
+	right: 6.6%;
+    width: 21.7%;
+    top: 4%;
+    overflow: hidden;
+}
+/*paper*/
+#content{
+	height: 500px;
+	margin-top: 35px;
+
+
+	.papers{
+		padding-left: 0;
+
+
+		.newPaper{
+			background: $white;
+			height: 100%;
+			padding:25px;
+			@include border;
+			margin-bottom: 15px;
+
+			.paperAdd{
+				margin-bottom: 25px;
+
+				i{
+				    padding: 10px;
+				    border-radius: 3px;
+				    background: #CCCCCC;
+				    color: $white;
+				}
+				h5{
+					display: inline-block;
+					color:#CCCCCC;
+
+					a{
+						color:$grey;
+					}
+				}
+				span{
+					font-size: 12px;
+					color:$lGrey;
+				}
+			}
+			.paperTitle{
+				margin-bottom: 25px;
+				a{
+					font-size: 22px;
+					color:#4B4B4B;
+				}
+			}
+			.paperText{
+				height: 60px;
+				overflow: hidden;
+				margin-bottom: 20px;
+				p{
+					color:#929292;
+					font-size: 14px;
+					
+				}
+			}
+			.moreButton{
+				font-size: 12px;
+				background: $white;
+				border:1px solid $lGrey;
+				color:#95AC4E;
+				outline-style: none;
+				&:hover{
+    				color:$white;
+    				background:#cccccc;
+    			}
+			}
+			.paperMenu{
+				margin-bottom: 20px;
+				.papA{
+					height: 35px;
+					background: $white;
+					font-size: 12px;
+					padding: 10px;
+					border-radius: 3px;
+		    		margin-right: 5px;
+
+		    		i{
+		    			margin-right: 5px;
+		    		}
+
+		    		&:first-child{
+		    			color:#6288A5;
+
+		    			&:hover{
+		    				color:$white;
+		    				background: #6288A5;
+		    			}
+		    		}
+		    		&:nth-child(2){
+		    			color:#95AC4E;
+
+		    			&:hover{
+		    				color:$white;
+		    				background: #95AC4E;
+		    			}
+		    		}
+				}
+				h5{
+					display: inline-block;
+					color:#CCCCCC;
+
+					a{
+						color:$grey ;
+					}
+					i{
+						margin:0 6px;
+					}
+				}
+			}
+		}
+	}
+	#jobBoard{
+		background: $white;
+		
+		@include border;
+		padding: 25px;
+		.newJobs{
+
+			.job{
+				h5{
+					color:#cccccc;
+					font-size: 14px;
+					font-weight: 700;
+					margin-bottom: 30px;
+				}
+				.jobInfo{
+					margin-bottom: 30px;
+					a{
+						color:#6288a5;
+						font-weight: 700;
+						font-size: 14px;
+						margin-bottom: 15px;
+					}
+					span{
+						font-size: 12px;
+						color:#cccccc;
+					}
+				}
+				.advertise{
+					font-size: 10px;
+					background: $grey;
+					color:$white;
+
+					i{
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+		
+	}
+}
