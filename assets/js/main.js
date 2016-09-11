@@ -19,7 +19,6 @@ $(document).ready(function () {
 $(document).ready(function(){
 	var touch = $('#touch-menu');
     var menu = $('.navig');
-    var job = $('#jobBoard')
  
     $(touch).on('click', function(e) {
         e.preventDefault();
@@ -29,11 +28,9 @@ $(document).ready(function(){
         var wid = $(window).width();
         if(wid > 760 && menu.is(':hidden')) {
             menu.css('display','none');
-            job.css('display','block');
+            
         }
-        if(wid < 760 ) {
-            job.css('display','none');
-        }
+        
     });
 });
 //fixed jobBoard
