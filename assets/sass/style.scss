@@ -1,10 +1,7 @@
-@import "variables";
-@import "commonClasses";
+@import "partials/commond/variables";
+@import "partials/commond/commonClasses";
 
-@import "partials/home";
-@import "partials/about";
-@import "partials/features";
-@import "partials/prices";
-@import "partials/feedback";
-@import "partials/team";
-@import "partials/contacts";
+@import "partials/commond/footer";
+@import "partials/commond/head";
+@import "partials/commond/content";
+@import "partials/commond/adaptivMenu";
