@@ -5,3 +5,12 @@
 @import "partials/commond/head";
 @import "partials/commond/content";
 @import "partials/commond/adaptivMenu";
+@import "partials/commond/index-page";
+@import "partials/commond/login";
+@import "partials/commond/signup";
+
+
+body,div {
+    display: block;
+    
+}
