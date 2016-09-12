@@ -1,9 +1,8 @@
 //read more button
 $('.moreButton').click(function(event) {
 	$(this).css('display','none');
-	$(this).siblings('.paperText').css('height', '200px');
-    var fullHeight = $(this).siblings('.paperText').height();
-	$(this).siblings('.paperText').animate({height: fullHeight}, 500);
+    var fullHeight = $(this).siblings('.paperText').children('p').height();
+	$(this).siblings('.paperText').animate({height: fullHeight + 'px'}, 500);
 
 });
 
@@ -38,13 +37,35 @@ $(document).ready(function(){
 
         $(window).scroll(function(){
     	var Top = $(this).scrollTop();
-		if ( Top >= 100 ) {
-			$("#jobBoard").addClass('fixed')
+		if ( Top >= 200 ) {
+			$(".jobBoard").addClass('fixed')
 		};
 
-        if ( Top < 100 ) {
-        	$("#jobBoard").removeClass('fixed')
+        if ( Top < 200 ) {
+        	$(".jobBoard").removeClass('fixed')
         };
 
     })
 })
+
+
+//collapse profil menu 
+$(document).ready(function(){
+  $('a').on('click', function(e){
+    e.preventDefault();
+  });
+  $('.profileImg ').hover(function () {
+     clearTimeout($.data(this,'timer'));
+
+     $('ul',this).stop(true,true).slideDown(200);
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+
+      $('ul',this).stop(true,true).slideUp(200);
+    }, this), 400));
+  });
+ 
+});
+
+
+
