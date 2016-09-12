@@ -515,10 +515,11 @@ body {
 .DesignSystem .Content {
   max-width: 1140px; }
 
-.DesignSystem .h-positionAbsoluteVCenter {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
+.h-positionAbsoluteVCenter {
+  padding-top: 155px;
+  padding-bottom: 110px;
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
 
 .DesignSystem .Media:first-child {
   margin-top: 0; }
@@ -649,14 +650,8 @@ h1 {
   .DesignSystem .CitationIllustration {
     position: relative;
     right: -40px; } }
-.DesignSystem .Foot {
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 36px; }
-
 .footer-content {
-  width: 1014px;
-  margin: 0 auto; }
+  width: 1014px; }
 
 .padding-top-7x, .padding-vertical-7x {
   padding-top: 28px; }
@@ -747,6 +742,9 @@ a {
 @media screen and (max-width: 420px) {
   .DesignSystem .Header {
     margin-top: 15px; } }
+.u-linkUnstyled:hover {
+  color: inherit !important; }
+
 .c-sessions {
   background: #fff !important; }
 

@@ -89,11 +89,14 @@ body {
     max-width: 1140px;
 }
 
-.DesignSystem .h-positionAbsoluteVCenter {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.h-positionAbsoluteVCenter {  
+    padding-top:155px;
+    padding-bottom:110px;
+    padding-right:0px !important;
+    padding-left:0px !important;
 }
+
+
 
 .DesignSystem .Media:first-child {
     margin-top: 0;
@@ -268,15 +271,11 @@ h1 {
 }
 }
 
-.DesignSystem .Foot {
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 36px;
-}
+
 
 .footer-content {
     width: 1014px;
-    margin: 0 auto;
+    
 }
 
 .padding-top-7x, .padding-vertical-7x {
@@ -407,4 +406,8 @@ a{
 .DesignSystem .Header {
     margin-top: 15px;
 }
+}
+
+.u-linkUnstyled:hover {
+    color: inherit !important;   
 }
