@@ -1,10 +1,11 @@
-@import "variables";
-@import "commonClasses";
+body{
+  background-color: #f1f1f1 !important;
+  font-family: Arial, sans-serif;
+}
 
-@import "partials/home";
-@import "partials/about";
-@import "partials/features";
-@import "partials/prices";
-@import "partials/feedback";
-@import "partials/team";
-@import "partials/contacts";
+@import "partials/common/variables";
+@import "partials/common/commonClasses";
+@import "partials/common/content";
+
+@import "partials/search/search";
+@import "partials/search_result/searchResult";

@@ -1,0 +1,152 @@
+/*  Search  */
+#search{
+
+  .container{
+    margin: 20px auto;
+    background-color: #fff;
+    .headerPadding{
+      padding: 36px;
+    }
+    .col-md-12{
+
+      h2{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #494848;
+        vertical-align: baseline;
+      }
+    }
+    .title{
+      h3{
+        margin: 0;
+        a{
+          color:#484b4e;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+    .subtitle{
+      padding-bottom: 15px;
+      color: #616161;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    .search_result{
+      a{
+        padding: 5px 5px 5px 20px;
+        line-height: 25px;
+        font-size: 16px;
+        display: block;
+      }
+    }
+    .tagsName{
+      padding: 24px 0;
+      .col-md-2{
+
+        a{
+          color: #06c;
+          text-decoration: none;
+          font-size: 11px;
+          border: 1px solid  #e5e5e5;
+          padding: 3px 6px;
+          margin-bottom: 5px;
+          display: block;
+          &:hover{
+            background-color: #f1f1f1;
+          }
+        }
+      }
+    }
+    #people{
+      p{
+        margin: 0;
+      }
+      // .row{
+      //   padding-top: 15px;
+      //   padding-bottom: 15px;
+      // }
+      .img{
+        max-width: 65px;
+        position: relative;
+        overflow: hidden;
+        div{
+          // position: absolute;
+          // left: 25%;
+        }
+        img{
+          max-height: 65px;
+        }
+      }
+      .col-md-9{
+        h3{
+          vertical-align: super;
+          line-height: 10px;
+          a{
+            font-size: 12px;
+            font-weight: 700;
+            color: #06c;
+          }
+        }
+        p{
+          margin-top: 15px;
+          a{
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 20px;
+            color: #75ace3;
+
+          }
+        }
+
+      }
+      .btn{
+        font-size: 14px !important;
+        font-weight: 600;
+        color: #fff !important;
+        margin: 15px 0;
+      }
+
+    }
+    #interest{
+      .search_result{
+        a{
+          border-bottom: 1px solid #eee;
+          color: #484b4e;
+          font-weight: 600;
+        }
+      }
+      .subtitle{
+        padding: 0;
+      }
+    }
+    #university{
+      .subtitle{
+        padding: 0;
+      }
+    }
+    #department{
+      .subtitle{
+        padding: 0;
+      }
+    }
+  }
+  @media (max-width: 1002px){
+    .row{
+        text-align: center;
+        .col-md-1{
+          display: flex;
+          justify-content: center;
+        }
+        .col-md-9{
+          h3{
+            margin-top: 10px;
+          }
+        }
+    }
+
+  }
+
+}

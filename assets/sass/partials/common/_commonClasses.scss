@@ -1,0 +1,43 @@
+// Common Classes
+.marginClear{
+  margin: 0;
+}
+
+.paddingClear{
+  padding: 0;
+}
+
+.triangle{
+      position: relative;
+      &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color:#fff;
+        border-top: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        transform: rotate(45deg);
+        width: 12px;
+        height: 12px;
+        top: 38px;
+        left: calc(50% - 4.898979px);
+      }
+    }
+
+    .custom-pagination{
+      display: inline-block;
+      padding-top: 30px;
+        li{
+          padding: 0;
+          a{
+            font-size: 13px;
+            text-decoration: none;
+            color: #999;
+            padding: 6px 12px;
+            &:hover{
+              color: black;
+                  font-weight: 700;
+            }
+          }
+        }
+    }

@@ -1,7 +1,362 @@
+body {
+  background-color: #f1f1f1 !important;
+  font-family: Arial, sans-serif; }
+
 .marginClear {
   margin: 0; }
 
 .paddingClear {
   padding: 0; }
+
+.triangle {
+  position: relative; }
+  .triangle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    transform: rotate(45deg);
+    width: 12px;
+    height: 12px;
+    top: 38px;
+    left: calc(50% - 4.898979px); }
+
+.custom-pagination {
+  display: inline-block;
+  padding-top: 30px; }
+  .custom-pagination li {
+    padding: 0; }
+    .custom-pagination li a {
+      font-size: 13px;
+      text-decoration: none;
+      color: #999;
+      padding: 6px 12px; }
+      .custom-pagination li a:hover {
+        color: black;
+        font-weight: 700; }
+
+bold {
+  font-weight: bold; }
+
+.fixed {
+  position: fixed;
+  right: 11%;
+  width: 19.5%;
+  top: 3%;
+  overflow: hidden; }
+
+/*paper*/
+#content {
+  height: 500px;
+  margin-top: 35px; }
+
+.papers {
+  padding-left: 0; }
+  .papers .newPaper {
+    background: #FFFFFF;
+    height: 100%;
+    padding: 25px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin-bottom: 15px; }
+
+.paperAdd {
+  margin-bottom: 25px; }
+  .paperAdd i {
+    padding: 10px;
+    border-radius: 3px;
+    background: #CCCCCC;
+    color: #FFFFFF; }
+  .paperAdd h5 {
+    display: inline-block;
+    color: #CCCCCC; }
+    .paperAdd h5 a {
+      color: #999999; }
+  .paperAdd span {
+    font-size: 12px;
+    color: #F1F1F1; }
+
+.paperTitle {
+  margin-bottom: 25px; }
+  .paperTitle a {
+    font-size: 22px;
+    color: #4B4B4B; }
+
+.paperText {
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .paperText p {
+    color: #929292;
+    font-size: 14px; }
+
+.moreButton {
+  font-size: 12px;
+  background: #FFFFFF;
+  border: 1px solid #F1F1F1;
+  color: #95AC4E;
+  outline-style: none; }
+  .moreButton:hover {
+    color: #FFFFFF;
+    background: #cccccc; }
+
+.paperMenu {
+  margin-bottom: 20px; }
+  .paperMenu .papA {
+    height: 35px;
+    background: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 5px; }
+    .paperMenu .papA i {
+      margin-right: 5px; }
+    .paperMenu .papA:first-child {
+      color: #6288A5; }
+      .paperMenu .papA:first-child:hover {
+        color: #FFFFFF;
+        background: #6288A5; }
+    .paperMenu .papA:nth-child(2) {
+      color: #95AC4E; }
+      .paperMenu .papA:nth-child(2):hover {
+        color: #FFFFFF;
+        background: #95AC4E; }
+  .paperMenu h5 {
+    display: inline-block;
+    color: #CCCCCC; }
+    .paperMenu h5 a {
+      color: #999999; }
+    .paperMenu h5 i {
+      margin: 0 6px; }
+  .paperMenu #jobBoard {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 25px; }
+    .paperMenu #jobBoard .newJobs .job h5 {
+      color: #cccccc;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 30px; }
+    .paperMenu #jobBoard .newJobs .job .jobInfo {
+      margin-bottom: 30px; }
+      .paperMenu #jobBoard .newJobs .job .jobInfo a {
+        color: #6288a5;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 15px; }
+      .paperMenu #jobBoard .newJobs .job .jobInfo span {
+        font-size: 12px;
+        color: #cccccc; }
+    .paperMenu #jobBoard .newJobs .job .advertise {
+      font-size: 10px;
+      background: #999999;
+      color: #FFFFFF; }
+      .paperMenu #jobBoard .newJobs .job .advertise i {
+        margin-left: 5px; }
+
+/*  Search  */
+#search .container {
+  margin: 20px auto;
+  background-color: #fff; }
+  #search .container .headerPadding {
+    padding: 36px; }
+  #search .container .col-md-12 h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #494848;
+    vertical-align: baseline; }
+  #search .container .title h3 {
+    margin: 0; }
+    #search .container .title h3 a {
+      color: #484b4e;
+      font-size: 14px;
+      font-weight: 600; }
+  #search .container .subtitle {
+    padding-bottom: 15px;
+    color: #616161;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px; }
+  #search .container .search_result a {
+    padding: 5px 5px 5px 20px;
+    line-height: 25px;
+    font-size: 16px;
+    display: block; }
+  #search .container .tagsName {
+    padding: 24px 0; }
+    #search .container .tagsName .col-md-2 a {
+      color: #06c;
+      text-decoration: none;
+      font-size: 11px;
+      border: 1px solid  #e5e5e5;
+      padding: 3px 6px;
+      margin-bottom: 5px;
+      display: block; }
+      #search .container .tagsName .col-md-2 a:hover {
+        background-color: #f1f1f1; }
+  #search .container #people p {
+    margin: 0; }
+  #search .container #people .img {
+    max-width: 65px;
+    position: relative;
+    overflow: hidden; }
+    #search .container #people .img img {
+      max-height: 65px; }
+  #search .container #people .col-md-9 h3 {
+    vertical-align: super;
+    line-height: 10px; }
+    #search .container #people .col-md-9 h3 a {
+      font-size: 12px;
+      font-weight: 700;
+      color: #06c; }
+  #search .container #people .col-md-9 p {
+    margin-top: 15px; }
+    #search .container #people .col-md-9 p a {
+      font-size: 11px;
+      font-weight: 600;
+      margin-top: 20px;
+      color: #75ace3; }
+  #search .container #people .btn {
+    font-size: 14px !important;
+    font-weight: 600;
+    color: #fff !important;
+    margin: 15px 0; }
+  #search .container #interest .search_result a {
+    border-bottom: 1px solid #eee;
+    color: #484b4e;
+    font-weight: 600; }
+  #search .container #interest .subtitle {
+    padding: 0; }
+  #search .container #university .subtitle {
+    padding: 0; }
+  #search .container #department .subtitle {
+    padding: 0; }
+@media (max-width: 1002px) {
+  #search .row {
+    text-align: center; }
+    #search .row .col-md-1 {
+      display: flex;
+      justify-content: center; }
+    #search .row .col-md-9 h3 {
+      margin-top: 10px; } }
+
+/* Search result */
+#search_result .title {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd; }
+  #search_result .title .col-md-10 h1 {
+    font-size: 30px;
+    color: #333;
+    line-height: 44px; }
+  #search_result .title .col-md-10 p {
+    color: #999;
+    font-size: 14px;
+    font-weight: 400; }
+  #search_result .title .col-md-2 a {
+    margin: 20px 0;
+    padding: 0 12px;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 1.15px;
+    background-color: #92aa4a;
+    font-size: 11px;
+    font-weight: 600; }
+    #search_result .title .col-md-2 a:hover {
+      background-color: #73863b; }
+#search_result .category {
+  padding: 24px; }
+  #search_result .category a {
+    padding: 2px 10px;
+    color: #666;
+    font-size: 13px; }
+    #search_result .category a:hover {
+      text-decoration: none;
+      color: #222; }
+#search_result .resultPeople {
+  background-color: #fff;
+  padding-top: 86px;
+  padding-bottom: 40px;
+  border-top: 1px solid #ddd; }
+  #search_result .resultPeople .container {
+    position: relative; }
+    #search_result .resultPeople .container .col-md-12 .img-container {
+      display: inline-block; }
+      #search_result .resultPeople .container .col-md-12 .img-container .img-icon {
+        width: 52px;
+        border-radius: 5px;
+        overflow: hidden;
+        display: inline-block; }
+        #search_result .resultPeople .container .col-md-12 .img-container .img-icon img {
+          height: 52px; }
+    #search_result .resultPeople .container .col-md-12 .info {
+      display: inline-block;
+      padding-left: 5px;
+      padding-top: 9px;
+      vertical-align: top; }
+      #search_result .resultPeople .container .col-md-12 .info .number {
+        font-weight: 700; }
+      #search_result .resultPeople .container .col-md-12 .info .grayLight {
+        color: #ddd; }
+      #search_result .resultPeople .container .col-md-12 .info .fa {
+        font-size: 11px;
+        color: #777; }
+      #search_result .resultPeople .container .col-md-12 .info p a {
+        color: #777;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none; }
+      #search_result .resultPeople .container .col-md-12 .info span {
+        font-size: 12px;
+        color: #777; }
+    #search_result .resultPeople .container .col-md-12 .button-container {
+      float: right; }
+      #search_result .resultPeople .container .col-md-12 .button-container .button {
+        background-color: transparent;
+        color: #92aa4a;
+        height: 36px;
+        line-height: 36px;
+        font-size: 11px;
+        padding: 0 18px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        font-weight: bold;
+        transition: color .25s ease,background-color .25s ease; }
+        #search_result .resultPeople .container .col-md-12 .button-container .button:hover {
+          color: #fff;
+          background-color: #92aa4a; }
+#search_result .resultDocument {
+  background-color: #fff;
+  padding-top: 60px;
+  border-top: 1px solid #ddd; }
+  #search_result .resultDocument .moreButton {
+    margin-bottom: 15px; }
+@media (max-width: 540px) {
+  #search_result .button-container {
+    float: none !important;
+    text-align: center; }
+    #search_result .button-container .button {
+      margin: 0 auto; } }
+@media (max-width: 430px) {
+  #search_result .resultPeople .col-md-12 {
+    text-align: center; }
+    #search_result .resultPeople .col-md-12 .img-container {
+      display: block !important; }
+      #search_result .resultPeople .col-md-12 .img-container .img-icon {
+        margin: 0 auto; } }
+@media (max-width: 550px) {
+  #search_result .resultDocument .paperMenu {
+    text-align: center; }
+    #search_result .resultDocument .paperMenu h5 {
+      font-size: 10px; } }
+@media (max-width: 765px) {
+  #search_result .resultDocument .paperMenu {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
