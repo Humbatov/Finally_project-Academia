@@ -1,57 +1,1047 @@
-/*
-Error: File to import not found or unreadable: partials/home.
-        on line 4 of sass/style.scss
+.marginClear {
+  margin: 0; }
 
-1: @import "variables";
-2: @import "commonClasses";
-3: 
-4: @import "partials/home";
-5: @import "partials/about";
-6: @import "partials/features";
-7: @import "partials/prices";
-8: @import "partials/feedback";
-9: @import "partials/team";
+.paddingClear {
+  padding: 0; }
 
-Backtrace:
-sass/style.scss:4
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: partials/home.\A         on line 4 of sass/style.scss\A \A 1: @import \"variables\";\A 2: @import \"commonClasses\";\A 3: \A 4: @import \"partials/home\";\A 5: @import \"partials/about\";\A 6: @import \"partials/features\";\A 7: @import \"partials/prices\";\A 8: @import \"partials/feedback\";\A 9: @import \"partials/team\";"; }
+.triangle {
+  position: relative; }
+  .triangle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    transform: rotate(45deg);
+    width: 12px;
+    height: 12px;
+    top: 38px;
+    left: calc(50% - 4.898979px); }
+
+/*papers add prevew*/
+.paperAdd {
+  margin-bottom: 25px; }
+  .paperAdd i {
+    padding: 10px;
+    border-radius: 3px;
+    background: #CCCCCC;
+    color: #FFFFFF; }
+  .paperAdd h5 {
+    display: inline-block;
+    color: #CCCCCC; }
+    .paperAdd h5 a {
+      color: #999999; }
+  .paperAdd span {
+    font-size: 12px;
+    color: #F1F1F1; }
+
+.paperTitle {
+  margin-bottom: 25px; }
+  .paperTitle a {
+    font-size: 22px;
+    color: #4B4B4B; }
+
+.paperText {
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .paperText p {
+    color: #929292;
+    font-size: 14px; }
+
+.moreButton {
+  font-size: 12px;
+  background: #FFFFFF;
+  border: 1px solid #F1F1F1;
+  color: #95AC4E;
+  outline-style: none; }
+  .moreButton:hover {
+    color: #FFFFFF;
+    background: #cccccc; }
+
+.paperMenu {
+  margin-bottom: 20px; }
+  .paperMenu .papA {
+    height: 35px;
+    background: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 5px; }
+    .paperMenu .papA i {
+      margin-right: 5px; }
+    .paperMenu .papA:first-child {
+      color: #6288A5; }
+      .paperMenu .papA:first-child:hover {
+        color: #FFFFFF;
+        background: #6288A5; }
+    .paperMenu .papA:nth-child(2) {
+      color: #95AC4E; }
+      .paperMenu .papA:nth-child(2):hover {
+        color: #FFFFFF;
+        background: #95AC4E; }
+  .paperMenu h5 {
+    display: inline-block;
+    color: #CCCCCC; }
+    .paperMenu h5 a {
+      color: #999999; }
+    .paperMenu h5 i {
+      margin: 0 6px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #F1F1F1; }
+
+.bold {
+  font-weight: bold; }
+
+/*footer*/
+#footer {
+  height: 50px;
+  background: #F1F1F1;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); }
+  #footer ul {
+    margin: 0; }
+    #footer ul li {
+      display: inline-block;
+      margin-right: 10px;
+      color: #999999; }
+      #footer ul li a {
+        margin-left: 5px;
+        color: #999999; }
+  #footer h5 {
+    font-size: 12px;
+    color: #999999; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #F1F1F1; }
+
+.bold {
+  font-weight: bold; }
+
+/*headermenu*/
+#head {
+  width: 100%;
+  height: 75px;
+  background: #FFFFFF;
+  padding-top: 15px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); }
+  #head .logoSearch input[type=text] {
+    width: 358px;
+    height: 35px;
+    border: 1px solid #F1F1F1;
+    border-radius: 3px;
+    outline-style: none;
+    padding-left: 40px;
+    margin-right: 220px; }
+  #head .logoSearch a:nth-child(2) {
+    position: relative;
+    padding: 7px;
+    background: white;
+    left: 40px;
+    text-decoration: none;
+    color: #999999; }
+  #head .headMenu {
+    margin-right: 20px; }
+    #head .headMenu ul li {
+      font-size: 12px; }
+      #head .headMenu ul li a {
+        color: #999999; }
+  #head .headButton .greenBtn {
+    padding: 10px !important;
+    color: #95AC4E !important; }
+    #head .headButton .greenBtn:hover {
+      color: #FFFFFF !important;
+      background: #95AC4E !important; }
+  #head .headButton .notif {
+    color: #999999;
+    border: 1px solid #F1F1F1;
+    font-size: 12px;
+    padding: 12px;
+    margin-right: 5px;
+    background: #FFFFFF; }
+    #head .headButton .notif i {
+      margin-right: 5px; }
+    #head .headButton .notif:hover {
+      color: #FFFFFF;
+      background: #999999; }
+  #head .headButton .profileImg {
+    width: 38px;
+    height: 38px; }
+    #head .headButton .profileImg .collapseMenu {
+      padding: 0; }
+    #head .headButton .profileImg img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px; }
+    #head .headButton .profileImg .triangle {
+      position: absolute; }
+      #head .headButton .profileImg .triangle:before {
+        top: -7px;
+        left: 128px;
+        z-index: -1; }
+    #head .headButton .profileImg ul {
+      display: none;
+      position: absolute;
+      top: 72px;
+      right: 88px;
+      width: 154px;
+      background: #fff;
+      margin: 0;
+      padding: 5px 0;
+      z-index: 10;
+      list-style: none;
+      font-size: 12px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); }
+      #head .headButton .profileImg ul li a {
+        color: #999999;
+        text-decoration: none; }
+        #head .headButton .profileImg ul li a div {
+          width: 154px;
+          height: 30px;
+          border-bottom: 1px solid #F1F1F1;
+          padding-top: 5px;
+          padding-left: 5px; }
+          #head .headButton .profileImg ul li a div:hover {
+            background: #cce6ff;
+            color: #FFFFFF; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #F1F1F1; }
+
+.bold {
+  font-weight: bold; }
+
+.fixed {
+  position: fixed;
+  right: 6.6%;
+  width: 21.7%;
+  bottom: 4%;
+  overflow: hidden; }
+
+/*paper*/
+#content {
+  height: 500px;
+  margin-top: 35px; }
+  #content .papers {
+    padding-left: 0;
+    margin-bottom: 50px;
+    transition: top 1s ease-out 0.5s; }
+    #content .papers .newPaper {
+      background: #FFFFFF;
+      height: 100%;
+      padding: 25px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      margin-bottom: 15px; }
+  #content .jobBoard {
+    margin-bottom: 30px;
+    padding: 0; }
+    #content .jobBoard .newJobs {
+      background: #FFFFFF;
+      padding: 25px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      margin-bottom: 10px; }
+      #content .jobBoard .newJobs .job h5 {
+        color: #cccccc;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 30px; }
+      #content .jobBoard .newJobs .job .jobInfo {
+        margin-bottom: 30px; }
+        #content .jobBoard .newJobs .job .jobInfo a {
+          color: #6288a5;
+          font-weight: 700;
+          font-size: 14px;
+          margin-bottom: 15px; }
+        #content .jobBoard .newJobs .job .jobInfo span {
+          font-size: 12px;
+          color: #cccccc; }
+      #content .jobBoard .newJobs .job .advertise {
+        font-size: 10px;
+        background: #999999;
+        color: #FFFFFF; }
+        #content .jobBoard .newJobs .job .advertise i {
+          margin-left: 5px; }
+
+/*content animation*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #F1F1F1; }
+
+.bold {
+  font-weight: bold; }
+
+/*headermenu*/
+#head {
+  width: 100%;
+  height: 75px;
+  background: #FFFFFF;
+  padding-top: 15px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); }
+  #head .logoSearch input[type=text] {
+    width: 358px;
+    height: 35px;
+    border: 1px solid #F1F1F1;
+    border-radius: 3px;
+    outline-style: none;
+    padding-left: 40px;
+    margin-right: 220px; }
+  #head .logoSearch a:nth-child(2) {
+    position: relative;
+    padding: 7px;
+    background: white;
+    left: 40px;
+    text-decoration: none;
+    color: #999999; }
+  #head .headMenu {
+    margin-right: 20px; }
+    #head .headMenu ul li {
+      font-size: 12px; }
+      #head .headMenu ul li a {
+        color: #999999; }
+  #head .headButton .greenBtn {
+    padding: 10px !important;
+    color: #95AC4E !important; }
+    #head .headButton .greenBtn:hover {
+      color: #FFFFFF !important;
+      background: #95AC4E !important; }
+  #head .headButton .notif {
+    color: #999999;
+    border: 1px solid #F1F1F1;
+    font-size: 12px;
+    padding: 12px;
+    margin-right: 5px;
+    background: #FFFFFF; }
+    #head .headButton .notif i {
+      margin-right: 5px; }
+    #head .headButton .notif:hover {
+      color: #FFFFFF;
+      background: #999999; }
+  #head .headButton .profileImg {
+    width: 38px;
+    height: 38px; }
+    #head .headButton .profileImg .collapseMenu {
+      padding: 0; }
+    #head .headButton .profileImg img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px; }
+    #head .headButton .profileImg .triangle {
+      position: absolute; }
+      #head .headButton .profileImg .triangle:before {
+        top: -7px;
+        left: 128px;
+        z-index: -1; }
+    #head .headButton .profileImg ul {
+      display: none;
+      position: absolute;
+      top: 72px;
+      right: 88px;
+      width: 154px;
+      background: #fff;
+      margin: 0;
+      padding: 5px 0;
+      z-index: 10;
+      list-style: none;
+      font-size: 12px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); }
+      #head .headButton .profileImg ul li a {
+        color: #999999;
+        text-decoration: none; }
+        #head .headButton .profileImg ul li a div {
+          width: 154px;
+          height: 30px;
+          border-bottom: 1px solid #F1F1F1;
+          padding-top: 5px;
+          padding-left: 5px; }
+          #head .headButton .profileImg ul li a div:hover {
+            background: #cce6ff;
+            color: #FFFFFF; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #F1F1F1; }
+
+.bold {
+  font-weight: bold; }
+
+.fixed {
+  position: fixed;
+  right: 6.6%;
+  width: 21.7%;
+  bottom: 4%;
+  overflow: hidden; }
+
+/*paper*/
+#content {
+  height: 500px;
+  margin-top: 35px; }
+  #content .papers {
+    padding-left: 0;
+    margin-bottom: 50px;
+    transition: top 1s ease-out 0.5s; }
+    #content .papers .newPaper {
+      background: #FFFFFF;
+      height: 100%;
+      padding: 25px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      margin-bottom: 15px; }
+  #content .jobBoard {
+    margin-bottom: 30px;
+    padding: 0; }
+    #content .jobBoard .newJobs {
+      background: #FFFFFF;
+      padding: 25px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      margin-bottom: 10px; }
+      #content .jobBoard .newJobs .job h5 {
+        color: #cccccc;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 30px; }
+      #content .jobBoard .newJobs .job .jobInfo {
+        margin-bottom: 30px; }
+        #content .jobBoard .newJobs .job .jobInfo a {
+          color: #6288a5;
+          font-weight: 700;
+          font-size: 14px;
+          margin-bottom: 15px; }
+        #content .jobBoard .newJobs .job .jobInfo span {
+          font-size: 12px;
+          color: #cccccc; }
+      #content .jobBoard .newJobs .job .advertise {
+        font-size: 10px;
+        background: #999999;
+        color: #FFFFFF; }
+        #content .jobBoard .newJobs .job .advertise i {
+          margin-left: 5px; }
+
+/*content animation*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+.navig {
+  display: none;
+  list-style: none;
+  padding: 0; }
+
+.navig,
+#touch-menu {
+  background: #3e4156; }
+
+.navig li {
+  float: left; }
+
+.navig li a,
+#touch-menu {
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff; }
+
+.navig li a:hover,
+#touch-menu:hover {
+  background: #515572; }
+
+#touch-menu {
+  display: none; }
+
+@media (max-width: 768px) {
+  .jobBoard {
+    display: none; }
+
+  .navBig {
+    display: none; }
+
+  .navig {
+    display: none; }
+
+  .navig li {
+    float: none; }
+
+  .navig li a {
+    border-top: 1px solid #eee;
+    border-left: 3px solid transparent;
+    background: #fff;
+    color: #666; }
+
+  .navig li:first-child a {
+    border-top: none; }
+
+  .navig li a:hover {
+    background: #f0f0f0;
+    color: #444;
+    border-left: 3px solid #515572; }
+
+  #touch-menu {
+    display: block; } }
+.a-landing {
+  background: #fff !important; }
+
+body {
+  font-family: "Roboto",Roboto,"Helvetica Neue",sans-serif;
+  font-size: 14px !important;
+  line-height: 1.428571429em;
+  font-weight: 400;
+  color: #494848;
+  -webkit-font-smoothing: subpixel-antialiased;
+  overflow-y: scroll;
+  margin: 0; }
+
+.DesignSystem {
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  color: #333;
+  font-size: 14px; }
+
+.DesignSystem .container {
+  max-height: 800px; }
+
+.DesignSystem .Header {
+  margin-top: 36px; }
+
+.DesignSystem .u-floatLeft {
+  float: left !important; }
+
+.DesignSystem .Logo {
+  margin-top: 9px; }
+
+.DesignSystem .u-floatRight {
+  float: right !important; }
+
+.DesignSystem .Button--inverseGray {
+  background-color: transparent;
+  color: #999; }
+
+.DesignSystem .Button--inverseGray:hover {
+  color: #fff;
+  background-color: #999; }
+
+.DesignSystem .Button:hover {
+  text-decoration: none; }
+
+.DesignSystem .Button:focus {
+  outline: 0;
+  box-shadow: 0 4px 2px -2px #ccc; }
+
+.DesignSystem .Button--sm {
+  height: 36px;
+  line-height: 36px;
+  font-size: 11px;
+  padding: 0 18px;
+  letter-spacing: 1.15px; }
+
+.DesignSystem .Button {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  vertical-align: bottom;
+  white-space: nowrap;
+  text-rendering: auto;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  transition: color .25s ease,background-color .25s ease; }
+
+.DesignSystem .Content {
+  max-width: 1140px; }
+
+.h-positionAbsoluteVCenter {
+  padding-top: 155px;
+  padding-bottom: 110px;
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.DesignSystem .Media:first-child {
+  margin-top: 0; }
+
+.DesignSystem .Media {
+  overflow: visible !important; }
+
+.DesignSystem .Media--middle {
+  vertical-align: middle; }
+
+.DesignSystem .Media-body, .DesignSystem .Media--left, .DesignSystem .Media--right {
+  display: table-cell; }
+
+.DesignSystem .Media--left {
+  padding-right: 14px; }
+
+.DesignSystem .Media-body {
+  width: 10000px; }
+
+.DesignSystem .Headline {
+  font-size: 46px;
+  line-height: 1.2em; }
+
+.DesignSystem .u-fontSerif {
+  font-family: "Georgia",serif !important; }
+
+.DesignSystem .u-mt0x {
+  margin-top: 0 !important; }
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: inherit;
+  display: block; }
+
+.DesignSystem .Subhead {
+  font-size: 18px;
+  line-height: 1.4em; }
+
+.DesignSystem .u-tcGrayDarker {
+  color: #777 !important; }
+
+.DesignSystem .u-fw300 {
+  font-weight: 300 !important; }
+
+.DesignSystem .u-linkUnstyled {
+  color: inherit; }
+
+.DesignSystem .u-textDecorationUnderline {
+  text-decoration: underline !important; }
+
+.DesignSystem .u-mt8x {
+  margin-top: 32px !important; }
+
+.DesignSystem .u-fs11 {
+  font-size: 11px !important; }
+
+.DesignSystem .u-ph3x {
+  padding-right: 12px !important;
+  padding-left: 12px !important; }
+
+.DesignSystem .Button--google {
+  background-color: #dd4b39;
+  color: #fff; }
+
+.DesignSystem .Button--google:hover {
+  background-color: #c23321;
+  color: #fff;
+  text-decoration: none; }
+
+.DesignSystem .Button--block {
+  display: block;
+  width: 100%; }
+
+.DesignSystem .Button--lg {
+  height: 52px;
+  line-height: 52px;
+  font-size: 13px;
+  padding: 0 28px;
+  letter-spacing: 1.5px; }
+
+.DesignSystem .u-mr5x {
+  margin-right: 20px !important; }
+
+.DesignSystem .Button--facebook {
+  background-color: #3b5998;
+  color: #fff; }
+
+.DesignSystem .Button--facebook:hover {
+  background-color: #2d4373;
+  color: #fff;
+  text-decoration: none; }
+
+.DesignSystem .u-mt8x {
+  margin-top: 32px !important; }
+
+.DesignSystem .u-taCenter {
+  text-align: center !important; }
+
+.DesignSystem .u-tcGray {
+  color: #ccc !important; }
+
+.DesignSystem .Media--middle {
+  vertical-align: middle; }
+
+.DesignSystem .Media--right {
+  display: table-cell; }
+
+.DesignSystem .Media--right {
+  padding-left: 14px; }
+
+.DesignSystem .Media-object {
+  display: block; }
+
+.DesignSystem .CitationIllustration {
+  width: 500px;
+  height: 500px; }
+
+@media screen and (min-width: 1200px) {
+  .DesignSystem .CitationIllustration {
+    position: relative;
+    right: -40px; } }
+@media screen and (max-height: 800px) {
+  .DesignSystem .CitationIllustration {
+    height: 400px;
+    width: 400px; } }
+@media screen and (min-width: 1200px) {
+  .DesignSystem .CitationIllustration {
+    position: relative;
+    right: -40px; } }
+.footer-content {
+  width: 1014px; }
+
+.padding-top-7x, .padding-vertical-7x {
+  padding-top: 28px; }
+
+.text-center {
+  text-align: center; }
+
+.footer-links-secondary {
+  color: #9c9c9c; }
+
+.margin-bottom-1x, .margin-vertical-1x {
+  margin-bottom: 4px; }
+
+.list-inline {
+  margin-left: -5px;
+  padding-left: 0;
+  list-style: none; }
+
+ul, ol {
+  margin-top: 0; }
+
+.footer-links-wide li, .bootstrap .footer-links-wide li {
+  font-size: 13px;
+  line-height: 15px;
+  padding: 0 10px; }
+
+.footer-links-secondary li, .footer-links-secondary a, .footer-links-secondary a:link, .footer-links-secondary a:visited {
+  color: #9c9c9c; }
+
+.footer-links-tertiary {
+  color: #ccc; }
+
+.footer-links-tertiary li, .footer-links-tertiary a, .footer-links-tertiary a:link, .footer-links-tertiary a:visited {
+  color: #ccc; }
+
+a:hover, a:focus {
+  color: #2a6496;
+  text-decoration: underline; }
+
+a {
+  background: transparent; }
+
+@media screen and (max-width: 962px) {
+  .DesignSystem .Headline {
+    font-size: 27px; } }
+@media screen and (max-width: 1140px) {
+  .DesignSystem .Headline {
+    font-size: 32px; } }
+@media screen and (max-width: 1200px) {
+  .DesignSystem .Headline {
+    font-size: 38px; } }
+@media screen and (max-width: 1140px) {
+  .DesignSystem .Subhead {
+    font-size: 16px; } }
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; } }
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important; } }
+.DesignSystem .u-mt4x {
+  margin-top: 16px !important; }
+
+.DesignSystem .Media, .DesignSystem .Media-body {
+  overflow: hidden;
+  zoom: 1; }
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none; }
+
+@media screen and (max-width: 420px) {
+  .DesignSystem .Subhead {
+    font-size: 14px; } }
+@media screen and (max-width: 420px) {
+  .DesignSystem .Headline {
+    font-size: 21px; } }
+@media screen and (max-width: 420px) {
+  .DesignSystem .Content {
+    position: relative;
+    margin-top: 36px;
+    top: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; } }
+@media screen and (max-width: 420px) {
+  .DesignSystem .Header {
+    margin-top: 15px; } }
+.u-linkUnstyled:hover {
+  color: inherit !important; }
+
+.c-sessions {
+  background: #fff !important; }
+
+body, div {
+  display: block; }
+
+.Content1 {
+  max-width: 530px; }
+
+.DesignSystem .u-mt2x {
+  margin-top: 8px !important; }
+
+.DesignSystem .u-p0x {
+  padding: 0 !important; }
+
+.DesignSystem .u-mv6x {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important; }
+
+.DesignSystem .Button--inverseFacebook {
+  background-color: transparent;
+  color: #3b5998; }
+
+.DesignSystem .Button--inverseGoogle {
+  background-color: transparent;
+  color: #dd4b39; }
+
+.login-hr-heading {
+  font-size: 12px; }
+
+.hr-heading {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap; }
+
+.hr-heading-text {
+  position: relative;
+  display: inline-block;
+  color: #999; }
+
+.DesignSystem .u-positionRelative {
+  position: relative !important; }
+
+.DesignSystem .u-mb8x {
+  margin-bottom: 32px !important; }
+
+.DesignSystem .u-mt6x {
+  margin-top: 24px !important; }
+
+.DesignSystem label {
+  margin-bottom: 12px !important; }
+
+.DesignSystem label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: bold; }
+
+.DesignSystem .TextInput--dark, .DesignSystem .TextArea--dark {
+  background-color: #f8f8f8 !important; }
+
+.DesignSystem .TextInput--lg {
+  height: 52px !important;
+  line-height: 52px !important;
+  padding: 0 17px !important;
+  font-size: 14px !important; }
+
+.DesignSystem .TextInput {
+  display: block;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  box-sizing: border-box; }
+
+label {
+  margin-bottom: 12px !important; }
+
+.DesignSystem .u-tcGrayDark {
+  color: #999 !important; }
+
+.DesignSystem .u-fs12 {
+  font-size: 12px !important; }
+
+.DesignSystem .u-textDecorationNone {
+  text-decoration: none !important; }
+
+.DesignSystem .u-pr1x {
+  padding-right: 4px !important; }
+
+.checkbox {
+  min-height: 20px; }
+
+.DesignSystem .u-m0x {
+  margin: 0 !important; }
+
+.DesignSystem .u-fw400 {
+  font-weight: 400 !important; }
+
+.DesignSystem .Button1 {
+  background-color: #6288a5;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  vertical-align: bottom;
+  white-space: nowrap;
+  text-rendering: auto;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  transition: color .25s ease,background-color .25s ease; }
+
+.margin-0x {
+  margin: 0; }
+
+.form-control1 {
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+  color: #494848; }
+
+.Button--blue {
+  background-color: #6288a5;
+  color: #fff; }
+
+.DesignSystem .u-mt20x {
+  margin-top: 80px !important; }
+
+.hr-heading-text:before {
+  right: 100%;
+  margin-right: 15px; }
+
+.hr-heading-text:before, .hr-heading-text:after {
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: #ddd;
+  content: ''; }
+
+.hr-heading-text:after {
+  left: 100%;
+  margin-left: 15px; }
+
+.hr-heading-text:after {
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: #ddd;
+  content: ''; }
+
+.DesignSystem .TextInput:focus {
+  border: 1px solid rgba(65, 138, 202, 0.5);
+  outline: 0; }
+
+.DesignSystem .u-mv8x {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important; }
+
+hr {
+  border-top: 1px solid #ddd !important; }
+
+.DesignSystem .Button--inverseFacebook:hover {
+  color: #fff;
+  background-color: #3b5998; }
+
+.DesignSystem .Button--inverseGoogle:hover {
+  color: #fff;
+  background-color: #dd4b39; }
+
+.DesignSystem .Button1:hover {
+  background-color: #4d6e87;
+  color: #fff;
+  text-decoration: none; }
+
+.c-signup {
+  background: #fff !important; }
+
+.DesignSystem .u-mt3x {
+  margin-top: 12px !important; }
+
+.DesignSystem .u-mb6x {
+  margin-bottom: 24px !important; }
+
+.DesignSystem .u-pt3x {
+  padding-top: 12px !important; }
+
+.DesignSystem .u-pb5x {
+  padding-bottom: 20px !important; }
+
+.DesignSystem .u-mv3x {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important; }
+
+body, div {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

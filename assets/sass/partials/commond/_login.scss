@@ -1,0 +1,231 @@
+.c-sessions {
+    background: #fff !important;
+}
+
+body,div {
+    display: block;
+}
+
+.Content1 {
+    max-width: 530px;
+
+}
+
+.DesignSystem .u-mt2x {
+    margin-top: 8px !important;
+}
+
+.DesignSystem .u-p0x {
+    padding: 0 !important;
+}
+
+.DesignSystem .u-mv6x {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+
+.DesignSystem .Button--inverseFacebook {
+    background-color: transparent;
+    color: #3b5998;
+}
+
+.DesignSystem .Button--inverseGoogle {
+    background-color: transparent;
+    color: #dd4b39;
+}
+
+.login-hr-heading {
+    font-size: 12px;
+}
+
+.hr-heading {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.hr-heading-text {
+    position: relative;
+    display: inline-block;
+    color: #999;
+}
+.DesignSystem .u-positionRelative {
+    position: relative !important;
+}
+.DesignSystem .u-mb8x {
+    margin-bottom: 32px !important;
+}
+.DesignSystem .u-mt6x {
+    margin-top: 24px !important;
+}
+
+.DesignSystem label {
+    margin-bottom: 12px !important;
+}
+.DesignSystem label {
+    display: inline-block;
+    max-width: 100%;
+    font-weight: bold;
+}
+
+.DesignSystem .TextInput--dark, .DesignSystem .TextArea--dark {
+    background-color: #f8f8f8 !important;
+}
+
+.DesignSystem .TextInput--lg {
+    height: 52px !important;
+    line-height: 52px !important;
+    padding: 0 17px !important;
+    font-size: 14px !important;
+}
+
+.DesignSystem .TextInput {
+    display: block;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 14px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+// DIQQET TEKRARLANMA
+label {
+    margin-bottom: 12px !important;
+}
+
+.DesignSystem .u-tcGrayDark {
+    color: #999 !important;
+}
+.DesignSystem .u-fs12 {
+    font-size: 12px !important;
+}
+
+.DesignSystem .u-textDecorationNone {
+    text-decoration: none !important;
+}
+
+.DesignSystem .u-pr1x {
+    padding-right: 4px !important;
+}
+
+.checkbox {
+    min-height: 20px;
+}
+
+.DesignSystem .u-m0x {
+    margin: 0 !important;
+}
+
+.DesignSystem .u-fw400 {
+    font-weight: 400 !important;
+}
+
+// BUTTON DEYISHIKLIK
+.DesignSystem .Button1 {
+    background-color: #6288a5;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.15);
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-rendering: auto;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    transition: color .25s ease,background-color .25s ease;
+}
+
+.margin-0x {
+    margin: 0;
+}
+
+// FORM CONTROL DEYISHIKLIK
+.form-control1 {
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.08);
+    color: #494848;
+}
+
+.Button--blue {
+    background-color: #6288a5;
+    color: #fff;
+}
+
+.DesignSystem .u-mt20x {
+    margin-top: 80px !important;
+}
+
+.hr-heading-text:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.hr-heading-text:before, .hr-heading-text:after {
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #ddd;
+    content: '';
+}
+
+.hr-heading-text:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.hr-heading-text:after {
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #ddd;
+    content: '';
+}
+
+.DesignSystem .TextInput:focus {
+    border: 1px solid rgba(65,138,202,0.5);
+    outline: 0;
+}
+
+.DesignSystem .u-mv8x {
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+}
+
+// HR QEYD ALINMISH DEYISHIKLIK
+
+hr {
+	border-top: 1px solid #ddd !important;
+}
+
+.DesignSystem .Button--inverseFacebook:hover {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.DesignSystem .Button--inverseGoogle:hover {
+    color: #fff;
+    background-color: #dd4b39;
+}
+
+.DesignSystem .Button1:hover {
+    background-color: #4d6e87;
+    color: #fff;
+    text-decoration: none;
+}
