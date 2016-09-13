@@ -18,9 +18,9 @@ body{
 }
 .fixed{
 	position: fixed;
-	right: 11%;
-    width: 19.5%;
-    top: 3%;
+	right: 6.6%;
+    width: 21.7%;
+    bottom:  4%;
     overflow: hidden;
 }
 /*paper*/
@@ -31,6 +31,8 @@ body{
 
 	.papers{
 		padding-left: 0;
+		margin-bottom: 50px;
+		transition:top 1s ease-out 0.5s;
 
 
 		.newPaper{
@@ -40,108 +42,17 @@ body{
 			@include border;
 			margin-bottom: 15px;
 
-			.paperAdd{
-				margin-bottom: 25px;
-
-				i{
-				    padding: 10px;
-				    border-radius: 3px;
-				    background: #CCCCCC;
-				    color: $white;
-				}
-				h5{
-					display: inline-block;
-					color:#CCCCCC;
-
-					a{
-						color:$grey;
-					}
-				}
-				span{
-					font-size: 12px;
-					color:$lGrey;
-				}
-			}
-			.paperTitle{
-				margin-bottom: 25px;
-				a{
-					font-size: 22px;
-					color:#4B4B4B;
-				}
-			}
-			.paperText{
-				height: 60px;
-				overflow: hidden;
-				margin-bottom: 20px;
-				p{
-					color:#929292;
-					font-size: 14px;
-					
-				}
-			}
-			.moreButton{
-				font-size: 12px;
-				background: $white;
-				border:1px solid $lGrey;
-				color:#95AC4E;
-				outline-style: none;
-				&:hover{
-    				color:$white;
-    				background:#cccccc;
-    			}
-			}
-			.paperMenu{
-				margin-bottom: 20px;
-				.papA{
-					height: 35px;
-					background: $white;
-					font-size: 12px;
-					padding: 10px;
-					border-radius: 3px;
-		    		margin-right: 5px;
-
-		    		i{
-		    			margin-right: 5px;
-		    		}
-
-		    		&:first-child{
-		    			color:#6288A5;
-
-		    			&:hover{
-		    				color:$white;
-		    				background: #6288A5;
-		    			}
-		    		}
-		    		&:nth-child(2){
-		    			color:#95AC4E;
-
-		    			&:hover{
-		    				color:$white;
-		    				background: #95AC4E;
-		    			}
-		    		}
-				}
-				h5{
-					display: inline-block;
-					color:#CCCCCC;
-
-					a{
-						color:$grey ;
-					}
-					i{
-						margin:0 6px;
-					}
-				}
-			}
+			
 		}
 	}
-	#jobBoard{
-		background: $white;
-		
-		@include border;
-		padding: 25px;
+	.jobBoard{	
+		margin-bottom: 30px;
+		padding: 0;
 		.newJobs{
-
+			background: $white;
+			padding: 25px;
+			@include border;
+			margin-bottom: 10px;
 			.job{
 				h5{
 					color:#cccccc;
@@ -175,4 +86,30 @@ body{
 		}
 		
 	}
+}
+/*content animation*/
+ .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }
