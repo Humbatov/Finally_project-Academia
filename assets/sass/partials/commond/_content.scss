@@ -6,7 +6,6 @@ $grey:#999999;
 	border:1px solid #CCCCCC;
 	border-radius: 5px;
 }
-
 body{
 	margin:0;
 	padding:0;
@@ -27,14 +26,10 @@ body{
 #content{
 	height: 500px;
 	margin-top: 35px;
-
-
 	.papers{
 		padding-left: 0;
 		margin-bottom: 50px;
 		transition:top 1s ease-out 0.5s;
-
-
 		.newPaper{
 			background: $white;
 			height: 100%;
@@ -42,11 +37,10 @@ body{
 			@include border;
 			margin-bottom: 15px;
 
-			
 		}
 	}
-	.jobBoard{	
-		margin-bottom: 30px;
+	.jobBoard{
+		margin-bottom: 55px;
 		padding: 0;
 		.newJobs{
 			background: $white;
@@ -84,7 +78,6 @@ body{
 				}
 			}
 		}
-		
 	}
 }
 /*content animation*/
@@ -94,7 +87,7 @@ body{
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
- 
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -112,4 +105,5 @@ body{
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+
 }

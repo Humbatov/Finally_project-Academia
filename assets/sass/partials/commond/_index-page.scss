@@ -82,16 +82,16 @@ body {
     font-weight: bold;
     font-style: normal;
     transition: color .25s ease,background-color .25s ease;
-}    
+}
 
 
 .DesignSystem .Content {
     max-width: 1140px;
 }
 
-.h-positionAbsoluteVCenter {  
-    padding-top:155px;
-    padding-bottom:110px;
+.h-positionAbsoluteVCenter {
+    padding-top:50px;
+    padding-bottom:30px;
     padding-right:0px !important;
     padding-left:0px !important;
 }
@@ -140,7 +140,7 @@ h1 {
     font-weight: 500;
     color: inherit;
     display: block;
-}    
+}
 
 .DesignSystem .Subhead {
     font-size: 18px;
@@ -275,7 +275,7 @@ h1 {
 
 .footer-content {
     width: 1014px;
-    
+
 }
 
 .padding-top-7x, .padding-vertical-7x {
@@ -409,5 +409,32 @@ a{
 }
 
 .u-linkUnstyled:hover {
-    color: inherit !important;   
+    color: inherit !important;
+}
+
+@media screen and (max-width: 420px){
+.DesignSystem .Content {
+    position: relative;
+    top: auto;
+    -ms-transform: 0px;
+    padding-bottom: 0px;
+    padding-top: 40px;
+    transform: none;
+    overflow: hidden;
+}
+}
+
+
+@media screen and (max-width: 420px){
+.DesignSystem .Media--left{
+padding-left:14px;
+
+
+}
+}
+
+@media screen and (max-width: 767px){
+ .DesignSystem .Media--left{
+  padding-left:14px;
+}
 }
