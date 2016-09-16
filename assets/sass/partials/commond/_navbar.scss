@@ -1,0 +1,312 @@
+/*  Navbar */
+/* adjust body when menu is open */
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important
+}
+.nav-link{
+  color: #555;
+  text-transform: uppercase;
+  line-height: 70px;
+  font-weight: 700;
+  font-size: 12px;
+  &:hover{
+    background-color: transparent;
+  }
+  &:focus{
+    background-color: transparent;
+  }
+}
+
+#page-content {
+  position: relative;
+}
+
+#nav{
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.1) ;
+  background-color: #fff;
+  /* put toggle bars on the left :: not using button */
+  #slide-nav{
+    .navbar-toggle {
+      cursor: pointer;
+      position: relative;
+      line-height: 0;
+      float: left;
+      margin: 0;
+      width: 30px;
+      height: 40px;
+      padding: 10px 0 0 0;
+      border: 0;
+    }
+    /* icon bar prettyup - optional */
+    .navbar-toggle{
+      .icon-bar {
+        width: 100%;
+        display: block;
+        height: 3px;
+        margin: 5px 0 0 0;
+        background: #777;
+      }
+      .slide-active {
+        .icon-bar {
+          background: #777;
+        }
+      }
+    }
+  }
+  .navbar-header {
+    position: relative
+  }
+  .nav-hidden{
+    display: none;
+  }
+  #navbar-collapse{
+    font-size: 14px;
+    color: #777 !important;
+    li {
+      a{
+        color: #777;
+        transition: color .25s ease,background-color .25s ease;
+        font-weight: 500;
+        &:hover{
+          color: #fff;
+          background-color: #999;
+        }
+      }
+    }
+    i{
+      font-size: 20px;
+      padding-right: 15px;
+    }
+    .user-name{
+      padding-top: 16px;
+      &:hover{
+        background-color: transparent;
+        color: inherit;
+      }
+    }
+    .profileImg{
+      margin: 8px 0 8px 6px;
+    }
+  }
+  .navbar{
+    height: auto;
+    padding: 9px;
+    margin-bottom: 0;
+    .navbar-form{
+      display: inline-block;
+      .form-group{
+        position: relative;
+        color: #999;
+        .fa{
+          position: absolute;
+          top: calc(50% - 7px);
+          left: 10px;
+          font-weight: 700;
+        }
+        input{
+          padding: 6px 12px 6px 34px;
+          font-size: 14px;
+          width: 360px;
+        }
+      }
+    }
+  }
+  .upload{
+    padding: 0 18px;
+    font-weight: bold;
+    font-size: 11px;
+    color: #92aa4a;
+    border: 1px solid #92aa4a;
+    line-height: 36px;
+    &:hover{
+      color:$white ;
+      background: #95AC4E ;
+    }
+
+  }
+  .button{
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(0,0,0,0.15);
+    margin: 8px 5px;
+
+  }
+
+  .button-notif{
+    padding: 8px;
+    font-size: 16px;
+    &:hover{
+      color:$white;
+      background: $grey;
+    }
+
+  }
+
+}
+.profileImg{
+  width:38px;
+  height:38px;
+      margin: 8px 5px;
+  //dropdown menu in profilimg div
+  .collapseMenu{
+    padding:0;
+  }
+
+  img{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .triangle{
+    position: absolute;
+    &:before{
+      top: -7px;
+      left: 128px;
+      z-index: -1;
+    }
+  }
+  ul{
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 10%;
+    width: 154px;
+    background: #fff;
+    margin: 0;
+    padding: 5px 0;
+    z-index:10;
+    list-style: none;
+    font-size: 12px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.1);
+
+
+      li{
+
+        a{
+          color:$grey;
+          text-decoration: none;
+
+
+          div{
+            width:154px;
+            height: 30px;
+            border-bottom: 1px solid $lGrey;
+            padding-top: 5px;
+            padding-left: 5px;
+
+            &:hover{
+            background: #cce6ff;
+            color:$white;
+
+            }
+          }
+        }
+      }
+
+  }
+}
+@media (max-width:767px) {
+  .form-control{
+    width: 100% !important;
+  }
+}
+/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
+@media (max-width:767px) {
+  #slide-nav {
+    border-top: 0;
+    .navbar-form {
+	    width: 100%;
+	    margin: 8px 0;
+	    text-align: center;
+	    overflow: hidden;
+	    /*fast clearfixer*/
+      .navbar-form .btn {
+    	    width: 100%
+    	}
+	  }
+    .container {
+  	    margin: 0!important;
+  	    padding: 0!important;
+        height:100%;
+  	}
+    .navbar-header {
+	    margin: 0 auto;
+	    padding: 0 15px;
+	  }
+    .navbar{
+      .slide-active {
+  	    position: absolute;
+  	    width: 80%;
+  	    top: -1px;
+  	    z-index: 1000;
+  	  }
+    }
+    #slidemenu {
+	    background: #f7f7f7;
+	    left: -100%;
+	    width: 70%;
+	    min-width: 0;
+	    position: absolute;
+	    padding-left: 0;
+	    z-index: 2;
+	    top: -8px;
+	    margin: 0;
+      .navbar-nav {
+  	    min-width: 0;
+  	    width: 100%;
+  	    margin: 0;
+        .dropdown-menu {
+          li {
+            a {
+          	    min-width: 0;
+          	    width: 80%;
+          	    white-space: normal;
+          	}
+          }
+        }
+    	}
+	  }
+  }
+  /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+	#navbar-height-col {
+	    position: fixed;
+	    top: 0;
+	    height: 100%;
+      bottom:0;
+	    width: 70%;
+	    left: -80%;
+	    background: #f7f7f7;
+	}
+}
+@media (min-width:768px) {
+  #page-content {
+	    left: 0!important;
+	}
+  .navbar-header {
+	    left: 0!important;
+	}
+  #navbar-collapse{
+    display: none;
+  }
+}
+@media (max-width:768px) {
+
+  #navbar-desktop{
+    display: none;
+  }
+
+}
+@media (max-width:998px ) and  (min-width:768px ){
+    .navbar{
+      .navbar-form{
+        .form-control{
+          width: 250px !important;
+        }
+      }
+  }
+}

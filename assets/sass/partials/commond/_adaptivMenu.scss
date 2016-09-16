@@ -1,0 +1,47 @@
+@import "head";
+@import "content";
+
+.navig{
+	display: none;
+	list-style: none;
+	padding: 0;
+}
+.navig,
+#touch-menu {
+	background: #3e4156;
+}
+.navig li {float: left;}
+.navig li a,
+#touch-menu {
+	display: block;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+.navig li a:hover,
+#touch-menu:hover {
+	background: #515572;
+}
+
+#touch-menu {display: none;}
+
+@media (max-width: 768px) {
+	.jobBoard{display: none;}
+	.navBig{display: none;}
+	.navig {display: none;}
+	.navig li {float: none;}
+	.navig li a {
+		border-top: 1px solid #eee;
+		border-left: 3px solid transparent;
+		background: #fff;
+		color: #666;
+	}
+	.navig li:first-child a {border-top: none;}
+	.navig li a:hover {
+		background: #f0f0f0;
+		color: #444;
+		border-left: 3px solid #515572;
+	}
+	#touch-menu {display: block;}
+}

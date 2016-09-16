@@ -1,6 +1,7 @@
 /* Search result */
 
 #search_result{
+  position: relative;
   .title{
     padding: 60px 0;
     background-color: #f8f8f8;
@@ -50,7 +51,6 @@
   .resultPeople{
     background-color: #fff;
     padding-top: 86px;
-    padding-bottom: 40px;
     border-top: 1px solid #ddd;
     .container{
       position: relative;
@@ -131,54 +131,49 @@
       margin-bottom: 15px;
     }
   }
-  @media (max-width: 540px){
-    .img-container{
-      // display: block !important;
-      // .img-icon{
-      //   margin: 0 auto;
-      // }
-    }
-    .button-container{
-      float: none !important;
+
+
+
+
+@media (max-width: 430px){
+  .resultPeople{
+    .col-md-12{
       text-align: center;
-      .button{
-        margin: 0 auto;
-      }
-    }
-  }
-  @media (max-width: 430px){
-    .resultPeople{
-      .col-md-12{
-        text-align: center;
-        .img-container{
-          display: block !important;
-          .img-icon{
-            margin: 0 auto;
-          }
-        }
-
-      }
-    }
-
-  }
-  @media (max-width: 550px){
-    .resultDocument{
-      .paperMenu{
-        text-align: center;
-        h5{
-          font-size: 10px;
+      .img-container{
+        display: block !important;
+        .img-icon{
+          margin: 0 auto;
         }
       }
-    }
 
+    }
   }
-  @media (max-width: 765px){
-    .resultDocument{
-      .paperMenu{
-        text-align: center;
+
+}
+@media (max-width: 550px){
+  .resultDocument{
+    .paperMenu{
+      text-align: center;
+      h5{
+        font-size: 10px;
       }
     }
-
   }
-  
+
+}
+@media (max-width: 765px){
+  .resultDocument{
+    .paperMenu{
+      text-align: center;
+    }
+  }
+  .button-container{
+    float: none !important;
+    text-align: center;
+    .button{
+      margin: 0 auto;
+    }
+  }
+}
+
 }

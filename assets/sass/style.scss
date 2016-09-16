@@ -1,11 +1,20 @@
-.search{
-  background-color: #f1f1f1 !important;
-  font-family: Arial, sans-serif;
-}
-
 @import "partials/commond/variables";
 @import "partials/commond/commonClasses";
+@import "partials/commond/footer";
+@import "partials/commond/navbar";
+@import "partials/commond/head";
 @import "partials/commond/content";
+@import "partials/commond/adaptivMenu";
+@import "partials/commond/index-page";
+@import "partials/commond/login";
+@import "partials/commond/signup";
+
 
 @import "partials/search/search";
 @import "partials/search_result/searchResult";
+
+
+body,div {
+    display: block;
+
+}

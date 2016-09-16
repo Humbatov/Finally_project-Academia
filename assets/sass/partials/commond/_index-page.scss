@@ -1,0 +1,440 @@
+.a-landing {
+    background: #fff !important;
+}
+
+body {
+    font-family: "Roboto",Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px !important;
+    line-height: 1.428571429em;
+    font-weight: 400;
+    color: #494848;
+    -webkit-font-smoothing: subpixel-antialiased;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.DesignSystem {
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    color: #333;
+    font-size: 14px;
+}
+
+.DesignSystem .container {
+    max-height: 800px;
+}
+
+.DesignSystem .Header {
+    margin-top: 36px;
+}
+
+.DesignSystem .u-floatLeft {
+    float: left !important;
+}
+
+.DesignSystem .Logo {
+    margin-top: 9px;
+}
+
+.DesignSystem .u-floatRight {
+    float: right !important;
+}
+
+.DesignSystem .Button--inverseGray {
+    background-color: transparent;
+    color: #999;
+}
+
+.DesignSystem .Button--inverseGray:hover {
+    color: #fff;
+    background-color: #999;
+}
+
+.DesignSystem .Button:hover {
+    text-decoration: none;
+}
+
+.DesignSystem .Button:focus {
+    outline: 0;
+    box-shadow: 0 4px 2px -2px #ccc;
+}
+
+.DesignSystem .Button--sm {
+    height: 36px;
+    line-height: 36px;
+    font-size: 11px;
+    padding: 0 18px;
+    letter-spacing: 1.15px;
+}
+
+.DesignSystem .Button {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.15);
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-rendering: auto;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    transition: color .25s ease,background-color .25s ease;
+}
+
+
+.DesignSystem .Content {
+    max-width: 1140px;
+}
+
+.h-positionAbsoluteVCenter {
+    padding-top:50px;
+    padding-bottom:30px;
+    padding-right:0px !important;
+    padding-left:0px !important;
+}
+
+
+
+.DesignSystem .Media:first-child {
+    margin-top: 0;
+}
+
+.DesignSystem .Media {
+    overflow: visible !important;
+}
+
+.DesignSystem .Media--middle {
+    vertical-align: middle;
+}
+
+.DesignSystem .Media-body, .DesignSystem .Media--left, .DesignSystem .Media--right {
+    display: table-cell;
+}
+
+.DesignSystem .Media--left {
+    padding-right: 14px;
+}
+
+.DesignSystem .Media-body {
+    width: 10000px;
+}
+
+.DesignSystem .Headline {
+    font-size: 46px;
+    line-height: 1.2em;
+}
+
+.DesignSystem .u-fontSerif {
+    font-family: "Georgia",serif !important;
+}
+
+.DesignSystem .u-mt0x {
+    margin-top: 0 !important;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: inherit;
+    display: block;
+}
+
+.DesignSystem .Subhead {
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+.DesignSystem .u-tcGrayDarker {
+    color: #777 !important;
+}
+
+.DesignSystem .u-fw300 {
+    font-weight: 300 !important;
+}
+
+.DesignSystem .u-linkUnstyled {
+    color: inherit;
+}
+
+.DesignSystem .u-textDecorationUnderline {
+    text-decoration: underline !important;
+}
+
+.DesignSystem .u-mt8x {
+    margin-top: 32px !important;
+}
+
+.DesignSystem .u-fs11 {
+    font-size: 11px !important;
+}
+
+.DesignSystem .u-ph3x {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+}
+
+.DesignSystem .Button--google {
+    background-color: #dd4b39;
+    color: #fff;
+}
+
+.DesignSystem .Button--google:hover {
+    background-color: #c23321;
+    color: #fff;
+    text-decoration: none;
+}
+
+.DesignSystem .Button--block {
+    display: block;
+    width: 100%;
+}
+
+.DesignSystem .Button--lg {
+    height: 52px;
+    line-height: 52px;
+    font-size: 13px;
+    padding: 0 28px;
+    letter-spacing: 1.5px;
+}
+
+.DesignSystem .u-mr5x {
+    margin-right: 20px !important;
+}
+
+.DesignSystem .Button--facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.DesignSystem .Button--facebook:hover {
+    background-color: #2d4373;
+    color: #fff;
+    text-decoration: none;
+}
+
+.DesignSystem .u-mt8x {
+    margin-top: 32px !important;
+}
+
+.DesignSystem .u-taCenter {
+    text-align: center !important;
+}
+
+.DesignSystem .u-tcGray {
+    color: #ccc !important;
+}
+
+.DesignSystem .Media--middle {
+    vertical-align: middle;
+}
+
+.DesignSystem .Media--right {
+    display: table-cell;
+}
+
+.DesignSystem .Media--right {
+    padding-left: 14px;
+}
+
+.DesignSystem .Media-object {
+    display: block;
+}
+
+.DesignSystem .CitationIllustration {
+    width: 500px;
+    height: 500px;
+}
+
+
+@media screen and (min-width: 1200px){
+.DesignSystem .CitationIllustration {
+    position: relative;
+    right: -40px;
+}
+}
+
+
+@media screen and (max-height: 800px){
+.DesignSystem .CitationIllustration {
+    height: 400px;
+    width: 400px;
+}
+}
+
+@media screen and (min-width: 1200px){
+.DesignSystem .CitationIllustration {
+    position: relative;
+    right: -40px;
+}
+}
+
+
+
+.footer-content {
+    width: 1014px;
+
+}
+
+.padding-top-7x, .padding-vertical-7x {
+    padding-top: 28px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.footer-links-secondary {
+    color: #9c9c9c;
+}
+
+.margin-bottom-1x, .margin-vertical-1x {
+    margin-bottom: 4px;
+}
+
+.list-inline {
+    margin-left: -5px;
+    padding-left: 0;
+    list-style: none;
+}
+
+ul, ol {
+    margin-top: 0;
+}
+
+.footer-links-wide li, .bootstrap .footer-links-wide li {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 0 10px;
+}
+
+.footer-links-secondary li, .footer-links-secondary a, .footer-links-secondary a:link, .footer-links-secondary a:visited {
+    color: #9c9c9c;
+}
+
+.footer-links-tertiary {
+    color: #ccc;
+}
+
+.footer-links-tertiary li, .footer-links-tertiary a, .footer-links-tertiary a:link, .footer-links-tertiary a:visited {
+    color: #ccc;
+}
+
+a:hover, a:focus {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+a{
+    background: transparent;
+}
+
+@media screen and (max-width: 962px){
+.DesignSystem .Headline {
+    font-size: 27px;
+}
+}
+@media screen and (max-width: 1140px){
+.DesignSystem .Headline {
+    font-size: 32px;
+}
+}
+@media screen and (max-width: 1200px){
+.DesignSystem .Headline {
+    font-size: 38px;
+}
+}
+@media screen and (max-width: 1140px){
+.DesignSystem .Subhead {
+    font-size: 16px;
+}
+}
+
+@media (max-width: 767px){
+.hidden-xs {
+    display: none !important;
+}
+}
+@media (max-width: 767px){
+.visible-xs {
+    display: block !important;
+}
+}
+
+.DesignSystem .u-mt4x {
+    margin-top: 16px !important;
+}
+
+.DesignSystem .Media, .DesignSystem .Media-body {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+@media screen and (max-width: 420px){
+.DesignSystem .Subhead {
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 420px){
+.DesignSystem .Headline {
+    font-size: 21px;
+}
+}
+
+@media screen and (max-width: 420px){
+.DesignSystem .Content {
+    position: relative;
+    margin-top: 36px;
+    top: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+}
+
+@media screen and (max-width: 420px){
+.DesignSystem .Header {
+    margin-top: 15px;
+}
+}
+
+.u-linkUnstyled:hover {
+    color: inherit !important;
+}
+
+@media screen and (max-width: 420px){
+.DesignSystem .Content {
+    position: relative;
+    top: auto;
+    -ms-transform: 0px;
+    padding-bottom: 0px;
+    padding-top: 40px;
+    transform: none;
+    overflow: hidden;
+}
+}
+
+
+@media screen and (max-width: 420px){
+.DesignSystem .Media--left{
+padding-left:14px;
+
+
+}
+}
+
+@media screen and (max-width: 767px){
+ .DesignSystem .Media--left{
+  padding-left:14px;
+}
+}
