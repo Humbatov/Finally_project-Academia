@@ -1132,7 +1132,7 @@ h4, h6 {
         margin: 0;
         font-size: 12px; }
     .main .setButton {
-      width: 100%;
+      margin-right: 0;
       text-align: center; }
       .main .setButton ul {
         width: 100%; }
@@ -1140,10 +1140,22 @@ h4, h6 {
           width: 100%; }
           .main .setButton ul li a {
             font-size: 12px; } }
+@media (max-width: 1000px) and (min-width: 900px) {
+  .removeForm {
+    width: 50%;
+    float: left; }
+
+  .main {
+    margin: 0; }
+    .main .mainRow {
+      width: 560px;
+      margin: 0 auto; }
+      .main .mainRow .setButton {
+        float: left; } }
 body {
   background-color: #F1F1F1; }
 
-.main {
+.setMain {
   margin-top: 32px; }
 
 .orta {
@@ -1151,6 +1163,9 @@ body {
 
 hr {
   background-color: #DDDDDD; }
+
+.setChange form {
+  width: 415px; }
 
 .setInp {
   width: 420px;
@@ -1161,15 +1176,12 @@ hr {
   width: 217px;
   height: 32px;
   border-radius: 4px;
-  margin-left: 0px;
-  padding-left: 0px; }
+  margin-left: 14px; }
 
 .disInput {
   width: 180px;
   height: 32px;
-  border-radius: 4px;
-  margin-right: -4px;
-  padding-right: 0px; }
+  border-radius: 4px; }
 
 form input {
   border: 1px solid #cccccc;
@@ -1220,14 +1232,16 @@ h4, h6 {
   padding-left: 0; }
 
 @media (max-width: 900px) {
-  main {
+  .setMain {
     width: 90%;
     margin: 0 auto;
     padding: 0 20px; }
-    main form {
+    .setMain form {
       width: 100%;
       text-align: center; }
-    main .setINp {
+      .setMain form input {
+        width: 100%; }
+    .setMain .setINp {
       width: 100%; }
 
   .setSelect {
@@ -1237,7 +1251,31 @@ h4, h6 {
     width: 200px; }
 
   .orta {
-    text-align: center; } }
+    text-align: center; }
+
+  .pageNameInput {
+    margin-left: 0;
+    margin-top: 5px; }
+
+  .setButton {
+    margin-right: 0;
+    text-align: center; }
+    .setButton ul {
+      width: 100%; }
+      .setButton ul li {
+        width: 100%; }
+        .setButton ul li a {
+          font-size: 12px; } }
+@media (max-width: 1000px) and (min-width: 900px) {
+  .setMain {
+    width: 90%; }
+    .setMain .setInfo {
+      float: left;
+      width: 45%;
+      margin-right: 50px; }
+    .setMain .setChange {
+      float: left;
+      width: 45%; } }
 body, div {
   display: block; }
 
