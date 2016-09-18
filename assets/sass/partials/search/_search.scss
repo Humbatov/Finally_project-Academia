@@ -69,6 +69,7 @@
       //   padding-bottom: 15px;
       // }
       .img{
+        display: inline-block;
         max-width: 65px;
         position: relative;
         overflow: hidden;
@@ -80,7 +81,10 @@
           max-height: 65px;
         }
       }
-      .col-md-9{
+      .info{
+        vertical-align: top;
+        padding-left: 10px;
+        display: inline-block;
         h3{
           vertical-align: super;
           line-height: 10px;
@@ -101,6 +105,9 @@
           }
         }
 
+      }
+      .button{
+        display: inline-block;
       }
       .btn{
         font-size: 14px !important;
@@ -134,20 +141,30 @@
     }
   }
 
-  @media (max-width: 1002px){
-    .row{
-        text-align: center;
-        .col-md-1{
-          display: flex;
-          justify-content: center;
+  @media (max-width: 850px){
+    #people{
+      .col-md-12{
+        .button{
+          text-align: center;
+          display: block;
+          float: none !important;
         }
-        .col-md-9{
-          h3{
-            margin-top: 10px;
-          }
-        }
+      }
     }
+
+
 
   }
 
+}
+
+@media (max-width: 611px){
+  #people{
+    .col-md-12{
+      text-align: center;
+      .info{
+        display: block;
+      }
+    }
+  }
 }

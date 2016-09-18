@@ -1298,6 +1298,18 @@ hr {
   margin-top: 12px !important;
   margin-bottom: 12px !important; }
 
+#image {
+  width: 200px; }
+  #image .image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden; }
+    #image .image img {
+      position: absolute;
+      left: -25%;
+      height: 200px; }
+
 /*  Search  */
 #search .container {
   margin: 20px auto;
@@ -1342,25 +1354,32 @@ hr {
   #search .container #people p {
     margin: 0; }
   #search .container #people .img {
+    display: inline-block;
     max-width: 65px;
     position: relative;
     overflow: hidden; }
     #search .container #people .img img {
       max-height: 65px; }
-  #search .container #people .col-md-9 h3 {
-    vertical-align: super;
-    line-height: 10px; }
-    #search .container #people .col-md-9 h3 a {
-      font-size: 12px;
-      font-weight: 700;
-      color: #06c; }
-  #search .container #people .col-md-9 p {
-    margin-top: 15px; }
-    #search .container #people .col-md-9 p a {
-      font-size: 11px;
-      font-weight: 600;
-      margin-top: 20px;
-      color: #75ace3; }
+  #search .container #people .info {
+    vertical-align: top;
+    padding-left: 10px;
+    display: inline-block; }
+    #search .container #people .info h3 {
+      vertical-align: super;
+      line-height: 10px; }
+      #search .container #people .info h3 a {
+        font-size: 12px;
+        font-weight: 700;
+        color: #06c; }
+    #search .container #people .info p {
+      margin-top: 15px; }
+      #search .container #people .info p a {
+        font-size: 11px;
+        font-weight: 600;
+        margin-top: 20px;
+        color: #75ace3; }
+  #search .container #people .button {
+    display: inline-block; }
   #search .container #people .btn {
     font-size: 14px !important;
     font-weight: 600;
@@ -1376,15 +1395,17 @@ hr {
     padding: 0; }
   #search .container #department .subtitle {
     padding: 0; }
-@media (max-width: 1002px) {
-  #search .row {
-    text-align: center; }
-    #search .row .col-md-1 {
-      display: flex;
-      justify-content: center; }
-    #search .row .col-md-9 h3 {
-      margin-top: 10px; } }
+@media (max-width: 850px) {
+  #search #people .col-md-12 .button {
+    text-align: center;
+    display: block;
+    float: none !important; } }
 
+@media (max-width: 611px) {
+  #people .col-md-12 {
+    text-align: center; }
+    #people .col-md-12 .info {
+      display: block; } }
 /* Search result */
 #search_result {
   position: relative; }
