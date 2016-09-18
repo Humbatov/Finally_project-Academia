@@ -1,0 +1,172 @@
+@import "variables";
+
+body {
+  background-color: $lGrey;
+}
+
+.setMain {
+  margin-top: 32px;
+  padding-bottom: 20px;
+  .orta {
+    margin-top: 100px;
+  }
+
+  hr {
+    background-color: #DDDDDD;
+  }
+  .setChange{
+    form{
+      width:415px;
+    }
+  }
+
+  .setInp {
+    width: 420px;
+    height: 32px;
+    border-radius: 4px;
+  }
+
+  .pageNameInput {
+    width: 217px;
+    height: 32px;
+    border-radius: 4px;
+    margin-left:14px;
+  }
+
+  .disInput {
+    width: 180px;
+    height: 32px;
+    border-radius: 4px;
+
+  }
+  form{
+    input{
+      border:1px solid #cccccc;
+      padding-left: 5px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 50px;
+    li {
+
+      width: 183px;
+      a {
+        text-decoration: none;
+       div{
+          padding: 10px;
+          width: 100%;
+          border-radius: 5px;
+          &:hover {
+
+            background: #428BCA;
+            color: white;
+
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    float: left;
+  }
+
+  .myac {
+    position: relative;
+    left: 15px;
+    top: 10px;
+    font-weight: 600;
+  }
+
+  .duyme {
+    background-color: #5E9F17;
+    color: #E0FFFF;
+    width: 55px;
+    height: 35px;
+    border-color: #579415;
+    border-radius: 4px;
+  }
+
+  h4, h6 {
+    font-weight: bold;
+  }
+  .setButton{
+    margin-right: 40px;
+    padding-left: 2px;
+  }
+  .setImg{
+    padding-left: 0;
+  }
+
+  //adaptiv settings
+  @media (max-width: 900px){
+    .setMain{
+      width:90%;
+      margin:0 auto;
+      padding: 0 20px;
+      form{
+        width:100%;
+        text-align: center;
+
+        input{
+          width:100%;
+        }
+      }
+
+      .setINp{
+        width:100%;
+      }
+
+    }
+     .setSelect{
+        width:100%;
+      }
+
+      .saveSet{
+        width:200px;
+      }
+      .orta{
+        text-align: center;
+      }
+      .pageNameInput{
+        margin-left: 0;
+        margin-top: 5px;
+      }
+      .setButton{
+        margin-right: 0;
+
+        text-align: center;
+        ul{
+          width: 100%;
+
+          li{
+            width:100%;
+            a{
+              font-size: 12px;
+              div{
+
+              }
+            }
+          }
+        }
+      }
+  }
+}
+@media (max-width:1000px) and (min-width: 900px){
+  .setMain{
+    width: 90%;
+    .setInfo{
+      float:left;
+      width: 45%;
+      margin-right: 50px;
+    }
+    .setChange{
+      float: left;
+      width: 45%;
+    }
+
+  }
+}

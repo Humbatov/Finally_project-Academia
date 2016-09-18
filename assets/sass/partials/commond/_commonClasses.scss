@@ -11,6 +11,10 @@
   background-color: #fff !important;
 }
 
+.bgColorGray{
+  background-color: $lGrey;
+}
+
 .triangle{
   position: relative;
   &:before{
