@@ -7,6 +7,9 @@
 .bgColorWhite {
   background-color: #fff !important; }
 
+.bgColorGray {
+  background-color: #F1F1F1; }
+
 .triangle {
   position: relative; }
   .triangle:before {
@@ -1298,6 +1301,204 @@ hr {
   margin-top: 12px !important;
   margin-bottom: 12px !important; }
 
+.main {
+  margin-top: 32px;
+  padding-bottom: 20px; }
+  .main .orta {
+    margin-top: 100px; }
+  .main form input {
+    border: 1px solid #cccccc;
+    padding-left: 5px; }
+  .main .dis {
+    width: 416px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #A94442;
+    background-color: #F2DEDE; }
+  .main ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 50px; }
+    .main ul li {
+      width: 183px; }
+      .main ul li a {
+        text-decoration: none; }
+        .main ul li a div {
+          padding: 10px;
+          width: 100%;
+          border-radius: 5px; }
+          .main ul li a div:hover {
+            text-decoration: none;
+            background: #428BCA;
+            color: white; }
+  .main img {
+    float: left; }
+  .main .myac {
+    position: relative;
+    left: 15px;
+    top: 10px;
+    font-weight: 600; }
+  .main .delete {
+    background-color: #5E9F17;
+    color: #E0FFFF;
+    width: 145px;
+    height: 35px;
+    border-color: #579415;
+    border-radius: 4px;
+    margin-left: 263px; }
+  .main h4, .main h6 {
+    font-weight: bold; }
+  .main .setButton {
+    margin-right: 50px;
+    padding-left: 2px; }
+  .main .setImg {
+    padding-left: 0; }
+  @media (max-width: 900px) {
+    .main .main {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0 20px; }
+      .main .main form {
+        width: 100%;
+        text-align: center; }
+        .main .main form input {
+          width: 100%;
+          font-size: 12px; }
+        .main .main form textarea {
+          width: 100%; }
+        .main .main form .delete {
+          width: 200px;
+          margin: 0;
+          font-size: 12px; }
+      .main .main .setButton {
+        margin-right: 0;
+        text-align: center; }
+        .main .main .setButton ul {
+          width: 100%; }
+          .main .main .setButton ul li {
+            width: 100%; }
+            .main .main .setButton ul li a {
+              font-size: 12px; } }
+
+@media (max-width: 1000px) and (min-width: 900px) {
+  .removeForm {
+    width: 50%;
+    float: left; }
+
+  .main {
+    margin: 0; }
+    .main .mainRow {
+      width: 560px;
+      margin: 0 auto; }
+      .main .mainRow .setButton {
+        float: left; } }
+body {
+  background-color: #F1F1F1; }
+
+.setMain {
+  margin-top: 32px;
+  padding-bottom: 20px; }
+  .setMain .orta {
+    margin-top: 100px; }
+  .setMain hr {
+    background-color: #DDDDDD; }
+  .setMain .setChange form {
+    width: 415px; }
+  .setMain .setInp {
+    width: 420px;
+    height: 32px;
+    border-radius: 4px; }
+  .setMain .pageNameInput {
+    width: 217px;
+    height: 32px;
+    border-radius: 4px;
+    margin-left: 14px; }
+  .setMain .disInput {
+    width: 180px;
+    height: 32px;
+    border-radius: 4px; }
+  .setMain form input {
+    border: 1px solid #cccccc;
+    padding-left: 5px; }
+  .setMain ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 50px; }
+    .setMain ul li {
+      width: 183px; }
+      .setMain ul li a {
+        text-decoration: none; }
+        .setMain ul li a div {
+          padding: 10px;
+          width: 100%;
+          border-radius: 5px; }
+          .setMain ul li a div:hover {
+            background: #428BCA;
+            color: white; }
+  .setMain img {
+    float: left; }
+  .setMain .myac {
+    position: relative;
+    left: 15px;
+    top: 10px;
+    font-weight: 600; }
+  .setMain .duyme {
+    background-color: #5E9F17;
+    color: #E0FFFF;
+    width: 55px;
+    height: 35px;
+    border-color: #579415;
+    border-radius: 4px; }
+  .setMain h4, .setMain h6 {
+    font-weight: bold; }
+  .setMain .setButton {
+    margin-right: 40px;
+    padding-left: 2px; }
+  .setMain .setImg {
+    padding-left: 0; }
+  @media (max-width: 900px) {
+    .setMain .setMain {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0 20px; }
+      .setMain .setMain form {
+        width: 100%;
+        text-align: center; }
+        .setMain .setMain form input {
+          width: 100%; }
+      .setMain .setMain .setINp {
+        width: 100%; }
+    .setMain .setSelect {
+      width: 100%; }
+    .setMain .saveSet {
+      width: 200px; }
+    .setMain .orta {
+      text-align: center; }
+    .setMain .pageNameInput {
+      margin-left: 0;
+      margin-top: 5px; }
+    .setMain .setButton {
+      margin-right: 0;
+      text-align: center; }
+      .setMain .setButton ul {
+        width: 100%; }
+        .setMain .setButton ul li {
+          width: 100%; }
+          .setMain .setButton ul li a {
+            font-size: 12px; } }
+
+@media (max-width: 1000px) and (min-width: 900px) {
+  .setMain {
+    width: 90%; }
+    .setMain .setInfo {
+      float: left;
+      width: 45%;
+      margin-right: 50px; }
+    .setMain .setChange {
+      float: left;
+      width: 45%; } }
 #image {
   width: 200px; }
   #image .image {

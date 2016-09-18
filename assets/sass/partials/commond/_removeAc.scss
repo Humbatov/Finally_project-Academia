@@ -1,0 +1,156 @@
+@import "variables";
+
+
+
+
+
+.main {
+  margin-top: 32px;
+  padding-bottom: 20px;
+  .orta {
+    margin-top: 100px;
+  }
+  form{
+    input{
+      border:1px solid #cccccc;
+      padding-left: 5px;
+    }
+  }
+
+
+
+  .dis {
+    width: 416px;
+    border-radius: 4px;
+    font-size:14px;
+    color:#A94442;
+    background-color:#F2DEDE;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 50px;
+    li {
+
+      width: 183px;
+
+      a {
+        text-decoration: none;
+        div{
+          padding: 10px;
+          width: 100%;
+          border-radius: 5px;
+          &:hover {
+            text-decoration: none;
+            background: #428BCA;
+            color: white;
+
+
+
+          }
+        }
+
+
+      }
+    }
+  }
+
+  img {
+    float: left;
+  }
+
+  .myac {
+    position: relative;
+    left: 15px;
+    top: 10px;
+    font-weight: 600;
+  }
+
+  .delete {
+    background-color: #5E9F17;
+    color: #E0FFFF;
+    width: 145px;
+    height: 35px;
+    border-color: #579415;
+    border-radius: 4px;
+    margin-left:263px;
+  }
+
+  h4, h6 {
+    font-weight: bold;
+  }
+  .setButton{
+    margin-right: 50px;
+    padding-left: 2px;
+  }
+  .setImg{
+    padding-left: 0;
+  }
+
+  //adaptiv remove
+  @media (max-width: 900px) {
+    .main{
+      width:90%;
+      margin:0 auto;
+      padding: 0 20px;
+
+
+      form{
+        width: 100%;
+        text-align: center;
+        input{
+        width:100%;
+        font-size: 12px;
+        }
+        textarea{
+          width: 100%;
+        }
+        .delete{
+          width:200px;
+          margin:0;
+          font-size: 12px;
+        }
+      }
+      .setButton{
+        margin-right: 0;
+
+        text-align: center;
+        ul{
+          width: 100%;
+
+          li{
+            width:100%;
+            a{
+              font-size: 12px;
+              div{
+               // text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:1000px) and (min-width: 900px){
+  .removeForm{
+    width:50%;
+    float: left;
+  }
+  .main{
+    margin:0;
+    .mainRow{
+      width: 560px;
+      margin:0 auto;
+
+      .setButton{
+        float: left;
+      }
+    }
+  }
+
+}
